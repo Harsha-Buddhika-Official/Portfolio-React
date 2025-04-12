@@ -1,16 +1,94 @@
-body.light-mode {
-    background-color: white;
-    color: black;
+:root {
+    --light-bg: #f8f9fa;
+    --light-text: #212529;
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+    --toggle-size: 50px;
+    --toggle-bg-light: #e9ecef;
+    --toggle-bg-dark: #2d3436;
+    --switch-light: #ffd43b; 
+    --switch-dark: #ffffff; 
+    --sun: url('/src/DarkMode/component/Sun.svg');
+    --moon: url('/src/DarkMode/component/Moon.svg');
+  }
+  
+  /* Mode Classes */
+  body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: all 0.3s ease;
   }
   
   body.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    transition: all 0.3s ease;
   }
   
-  /* Optional styling for the container */
+  /* Toggle Container */
   .theme-toggle {
-    padding: 1rem;
-    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
   
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: var(--toggle-size);
+    height: calc(var(--toggle-size) / 2);
+  }
+  
+  /* Hide default checkbox */
+  .toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-bg-light);
+    transition: .4s;
+    border-radius: calc(var(--toggle-size) / 2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sun/Moon icon (slider knob) */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: calc(var(--toggle-size) / 2 - 6px);
+    width: calc(var(--toggle-size) / 2 - 6px);
+    left: 7px;
+    bottom: 3px;
+    background-color: var(--switch-light);
+    background-image: var(--sun);
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark mode state */
+  input:checked + .slider {
+    background-color: var(--toggle-bg-dark);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(calc(var(--toggle-size) / 2 - 6px));
+    background-color: var(--switch-dark);
+    background-image: var(--moon);
+  }
+  
+  /* Focus styling */
+  input:focus + .slider {
+    box-shadow: 0 0 2px var(--toggle-bg-dark);
+  }
