@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    box-shadow: ;
+}
+.navbar a{
+    text-decoration:none;
+    font-family: arial;
+    padding: 0px 5px;
+}

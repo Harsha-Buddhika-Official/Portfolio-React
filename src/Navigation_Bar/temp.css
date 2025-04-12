@@ -1,0 +1,105 @@
+/* Navigation Bar Container */
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Portfolio Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .navbar-logo a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Navigation Menu */
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navbar-item {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-item:hover {
+    color: #000;
+  }
+  
+  /* Dark Mode Toggle Space */
+  .dark-mode-toggle {
+    width: 40px;
+    height: 24px;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode .navbar {
+    background-color: #121212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode .navbar-logo a {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar-item {
+    color: #bbbbbb;
+  }
+  
+  body.dark-mode .navbar-item:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      gap: 1rem;
+    }
+    
+    .navbar-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-container {
+      padding: 0 0.5rem;
+    }
+    
+    .navbar-logo {
+      font-size: 1.2rem;
+    }
+    
+    .navbar-menu {
+      gap: 0.75rem;
+    }
+    
+    .navbar-item {
+      font-size: 0.8rem;
+    }
+  }
