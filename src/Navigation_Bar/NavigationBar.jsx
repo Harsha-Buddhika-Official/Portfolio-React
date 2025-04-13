@@ -14,7 +14,7 @@ function NavigationBar(){
             <div className="navbar-menu">
               <a href="#home" className="navbar-item">Home</a>
               <a href="#about" className="navbar-item">About</a>
-              <a href="#projects" className="navbar-item">Projects</a>
+              <a href="#projects" className="navbar-item">Projects</a> 
               <a href="#results" className="navbar-item">Results</a>
               <a href="#contact" className="navbar-item">Contact</a>
               

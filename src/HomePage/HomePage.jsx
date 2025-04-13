@@ -1,6 +1,9 @@
+import './HOmeStyle.css'
+import NavigationBar from '../Navigation_Bar/NavigationBar';
+
 function HomePage(){
     return(
-        <h1>hello</h1>
+        <NavigationBar/>
     );
 }
 export default HomePage
