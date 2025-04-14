@@ -3,10 +3,12 @@ import './TypingAnimation.css';
 
 function TypingAnimation(){
   const phrases = [
-    "Software Engineer",
     "Computer Science Undergraduate",
+    "Software Engineer",
     "UI/UX Designer",
-    "Web Developer"
+    "Full Stack Developer",
+    "Web Developer",
+    "Graphic Designer",
   ];
   
   const [displayText, setDisplayText] = useState("");

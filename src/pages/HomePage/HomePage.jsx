@@ -1,5 +1,5 @@
 import './HOmeStyle.css'
-import NavigationBar from '../Navigation_Bar/NavigationBar';
+import NavigationBar from '../../components/Navigation_Bar/NavigationBar';
 import TypingAnimation from './Typing_Automation/TypingAnimation';
 
 function HomePage(){

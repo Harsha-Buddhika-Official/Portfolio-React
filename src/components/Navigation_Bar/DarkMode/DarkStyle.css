@@ -8,8 +8,8 @@
     --toggle-bg-dark: #2d3436;
     --switch-light: #ffd43b; 
     --switch-dark: #ffffff; 
-    --sun: url('/src/DarkMode/component/Sun.svg');
-    --moon: url('/src/DarkMode/component/Moon.svg');
+    --sun: url('/src/components/Navigation_Bar/DarkMode/assets/Sun.svg');
+    --moon: url('/src/components/Navigation_Bar/DarkMode/assets/Moon.svg');
   }
   
   /* Mode Classes */

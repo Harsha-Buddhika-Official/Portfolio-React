@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavigationStyle.css'
 // import './temp.css'
-import DarkMode from '../DarkMode/DarkMode.jsx'
+import DarkMode from './DarkMode/DarkMode'
 
 function NavigationBar(){
     return (
@@ -27,4 +27,4 @@ function NavigationBar(){
       );
 }
 
-export default NavigationBar
+export default NavigationBar;

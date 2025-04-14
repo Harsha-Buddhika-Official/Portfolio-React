@@ -19,3 +19,14 @@
     margin: 0px;
     padding: 0px;
 }
+body.light-mode {
+  background-image: url('./assets/photo-1518655048521-f130df041f66.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* transition: background-image 0.3s ease; */
+}
+
+body.dark-mode {
+  background-image: none; 
+}
