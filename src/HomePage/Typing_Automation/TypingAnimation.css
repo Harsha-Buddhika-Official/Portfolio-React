@@ -1,0 +1,24 @@
+.text-container {
+  height: 3.5rem;
+}
+
+.dynamic-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #63b3ed;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.5rem;
+  height: 2rem;
+  background-color: #63b3ed;
+  margin-left: 0.25rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
