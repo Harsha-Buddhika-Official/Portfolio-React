@@ -50,3 +50,26 @@ body.dark-mode {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5rem;
 }
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2e5877;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-top: 10px;
+}
+.cv-button:hover {
+  background-color: #63b3ed;
+}
+.cv-button-icon {
+  width: 18px;
+  height: 18px;
+}

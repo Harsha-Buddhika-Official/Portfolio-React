@@ -19,7 +19,9 @@ function HomePage(){
                         Passionate about tech and always ready to take on
                         new challenges.
                     </p> */}
-                    {/* <button></button> */}
+                    <a href="">
+                        <button className='cv-button'>Download CV</button>
+                    </a>
                 </div>
             </div>
         </>
