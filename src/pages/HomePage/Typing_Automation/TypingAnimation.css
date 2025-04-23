@@ -1,11 +1,18 @@
 .text-container {
-  height: 3.5rem;
+  height: auto; /* Let it expand based on content */
+  max-width: 100%;
+  white-space: normal; /* Allow text wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center; /* Optional: center the text */
+  padding: 0 1rem; /* Optional: horizontal padding */
 }
 
 .dynamic-text {
   font-size: 3rem;
   font-weight: 600;
   color: #63b3ed;
+  display: inline-block;
 }
 
 .cursor {
