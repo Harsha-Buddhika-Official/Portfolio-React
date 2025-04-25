@@ -1,9 +1,11 @@
-function projects() {
+import Template from "../../components/Project_block/Template.jsx";
+
+function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
-      <p>Here are some of my projects.</p>
+        <Template />
+        <h1>Project file is working</h1>
     </div>
   );
 }
-export default projects;
+export default Projects;
