@@ -40,7 +40,7 @@ body.dark-mode {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   transition: background-image 0.3s ease;
-  max-height: 100vh;
+  max-height: 85vh;
 }
 
 .paragraph{
