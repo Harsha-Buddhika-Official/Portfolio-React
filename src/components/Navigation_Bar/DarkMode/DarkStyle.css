@@ -1,5 +1,5 @@
 :root {
-    --light-bg: #f8f9fa;
+    --light-bg: #ededed;
     --light-text: #212529;
     --dark-bg: #0f1525;
     --dark-text: #e0e0e0;
@@ -62,7 +62,6 @@
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   }
   
-  /* Sun/Moon icon (slider knob) */
   .slider:before {
     position: absolute;
     content: "";
