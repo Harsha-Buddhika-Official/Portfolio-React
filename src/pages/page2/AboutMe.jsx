@@ -1,5 +1,5 @@
 import './AboutStyling.css'
-import profilePic from './assets/image.jpg';
+import profilePic from './assets/image1.jpg';
 
 function AboutMe(){
     return(
