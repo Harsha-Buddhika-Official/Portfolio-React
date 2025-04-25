@@ -31,7 +31,7 @@ body.light-mode {
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image 0.3s ease;
-  /* background-blend-mode: overlay; */
+  max-height: 100vh;
 }
 body.dark-mode {
   background-image: url('./assets/photo-1480506132288-68f7705954bd.avif');
@@ -40,6 +40,7 @@ body.dark-mode {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   transition: background-image 0.3s ease;
+  max-height: 100vh;
 }
 
 .paragraph{
@@ -53,21 +54,18 @@ body.dark-mode {
 .cv-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background-color: #2e5877;
+  background-color: #0b8dcd;
   color: white;
   font-weight: 600;
   font-size: larger;
   padding: 8px 16px;
   border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: none;
   margin-top: 10px;
+  cursor: pointer;
 }
 .cv-button:hover {
-  background-color: #63b3ed;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.6);
 }
 .cv-button-icon {
   width: 18px;
