@@ -1,4 +1,4 @@
-import './AboutStyling.css'
+import './aboutStyling.css'
 import profilePic from './assets/image1.jpg';
 
 function AboutMe(){

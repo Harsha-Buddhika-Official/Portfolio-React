@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NavigationStyle.css';
+import './navigationStyle.css';
 import DarkMode from './DarkMode/DarkMode';
 
 function NavigationBar() {

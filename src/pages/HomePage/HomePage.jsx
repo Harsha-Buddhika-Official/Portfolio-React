@@ -1,5 +1,5 @@
 import './HOmeStyle.css'
-import TypingAnimation from './Typing_Automation/TypingAnimation';
+import TypingAnimation from './Typing_Automation/typingAnimation';
 
 function HomePage(){
     return(

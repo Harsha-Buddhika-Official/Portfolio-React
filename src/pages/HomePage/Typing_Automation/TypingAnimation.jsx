@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './TypingAnimation.css';
+import './typingAnimation.css';
 
 function TypingAnimation(){
   const phrases = [
