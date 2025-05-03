@@ -106,15 +106,15 @@ Visit `http://localhost:5173` to view the application.
 
 ---
 
-## 📄 License
+## 🔒 License
 
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute it for personal or commercial purposes.
+This project is **private property**. Unauthorized copying, redistribution, or commercial use of any part of this codebase is strictly prohibited.
 
 ---
 
 ## 🙌 Contributing
 
-Pull requests are welcome! If you’d like to contribute, feel free to fork the repo and submit a PR.
+Contributions are currently not open to the public. For collaboration inquiries, please contact the project owner directly.
 
 ---
 
