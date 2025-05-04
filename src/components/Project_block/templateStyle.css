@@ -61,7 +61,6 @@ body{
     padding: 4px 10px;
     font-weight: 500;
 }
-/* Media query for responsive design */
 @media (max-width: 640px) {
     .template-container {
         max-width: 100%;
