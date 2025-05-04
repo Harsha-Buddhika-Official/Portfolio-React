@@ -6,7 +6,10 @@ function Projects() {
   const projects = [
     {
       name: "Project 1",
-      image: project1Image // Use the imported image
+      image: project1Image, 
+      description: "This is the description for Project 1.",
+      technologies: ["React", "CSS", "JavaScript"],
+      github: "https://github.com/Harsha-Buddhika-Official/Portfolio-React",
     }
   ];
 
@@ -17,6 +20,9 @@ function Projects() {
           key={index}
           name={project.name}
           image={project.image}
+          description={project.description}
+          technologies={project.technologies}
+          github={project.github}
         />
       ))}
     </div>
