@@ -7,8 +7,8 @@ function Projects() {
     {
       name: "Project 1",
       image: project1Image, 
-      description: "This is the description for Project 1.",
-      technologies: ["React", "CSS", "JavaScript"],
+      description: "This is the description for Project 1.hasduiopfheuha fush ehfiuhe afhiush difhaweh fhaisdhfihwea ifhishafeuihiahfihd",
+      technologies: ["React", "CSS", "JavaScript"], 
       github: "https://github.com/Harsha-Buddhika-Official/Portfolio-React",
     }
   ];
