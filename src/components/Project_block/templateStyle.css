@@ -18,7 +18,9 @@ body{
 }
 
 .image-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    border-radius: 8px;
+
 }
 .text-container{
     text-align: left;
