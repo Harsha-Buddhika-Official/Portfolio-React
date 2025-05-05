@@ -2,50 +2,75 @@ body {
     background-color: #0f1525;
     color: #ffffff;
 }
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .icons-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
 }
+
 .icons-container img {
     width: 50px;
     height: auto;
     padding: 10px;
 }
+
 .skills-container {
     text-align: center;
     padding: 20px;
 }
+
 .learned, .currently-learning, .skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
 }
+
 .icon-name {
     margin-top: 5px;
     font-size: 14px;
     color: #ffffff;
     text-transform: capitalize;
 }
+
+body.light-mode .icon-name {
+    color: #000000; /* Change icon name color in light mode */
+}
+
+body.light-mode .icons-container img {
+    filter: brightness(0); /* Change icon color to black in light mode */
+}
+
 .titals {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+body.light-mode .titals {
+    color: #000000; /* Change title color in light mode */
+}
+
 .icon-item {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 1s ease-out;
-  }
-  
-  .icon-item.show {
+}
+
+.icon-item.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
