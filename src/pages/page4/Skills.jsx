@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import './skills.css';
+
 import imageC from './images/c++.png';
 import imageCss from './images/css.png';
 import imageExpress from './images/expressJs.png';
@@ -17,6 +19,27 @@ import imagePython from './images/python.png';
 import imageReact from './images/react.png';
 
 function Skills() {
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        const iconItems = document.querySelectorAll('.icon-item');
+        iconItems.forEach((item) => observer.observe(item));
+
+        return () => {
+            iconItems.forEach((item) => observer.unobserve(item));
+        };
+    }, []);
+
     return (
         <div className='skills-container'>
             <h1 className='titals'>Tech Stack & Tools</h1>
@@ -47,6 +70,7 @@ function Skills() {
                         <p className="icon-name">C++</p>
                     </div>
                 </div>
+
                 <h2 className='titals'>Currently Learning</h2>
                 <div className='currently-learning'>
                     <div className="icon-item">
@@ -70,6 +94,7 @@ function Skills() {
                         <p className="icon-name">MySQL</p>
                     </div>
                 </div>
+
                 <h2 className='titals'>Skills</h2>
                 <div className='skills'>
                     <div className="icon-item">

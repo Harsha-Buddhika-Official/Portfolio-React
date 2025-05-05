@@ -8,12 +8,12 @@ import './App.css'
 function App() {
   return (
     <>
-      {/* <div className='Navigator'>
+      <div className='Navigator'>
         <NavigationBar/>
       </div>
       <HomePage/>
       <AboutMe/>
-      <Projects/> */}
+      <Projects/>
       <Skills/>
     </>
   );
