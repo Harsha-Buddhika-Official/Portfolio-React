@@ -4,8 +4,11 @@
     width: 600px;
     max-width: 70%;
     margin: 0 auto 20px; 
-    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.education-header{
+    padding: 0px 20px;
 }
 .education-header {
     display: flex;
@@ -16,4 +19,12 @@
 .toggle-icon {
     margin-left: auto;             /* Push the icon to the far right */
     font-size: 1.2rem;             /* Adjust the size of the icon if needed */
+}
+.degree-scroll{
+    border-top: 1px solid;
+    margin: 0;
+}
+.degree-content{
+    padding: 0px 20px;
+    padding-bottom: 5px;
 }
