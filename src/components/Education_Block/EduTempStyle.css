@@ -21,10 +21,52 @@
     font-size: 1.2rem;             /* Adjust the size of the icon if needed */
 }
 .degree-scroll{
-    border-top: 1px solid;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0;
 }
 .degree-content{
     padding: 0px 20px;
     padding-bottom: 5px;
+}
+.description {
+    font-size: 20px;
+}
+.key-course{
+    font-size: 15px;
+    font-weight:bold;
+}
+.key-course-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    counter-reset: list-item; /* Reset the counter for this list */
+}
+.key-course-list-items {
+    position: relative;
+    padding-left: 35px; /* Add space for the number circle */
+    margin-bottom: 12px; /* Add spacing between list items */
+}
+.key-course-list-items::before {
+    content: counter(list-item); /* Use the counter value */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #dbeafe; /* Blue background */
+    color: #2563ec; /* White text */
+    width: 24px; /* Circle size */
+    height: 24px; /* Circle size */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold;
+}
+.achievements-list-items::marker{
+    color: #2563ec;
+}
+.degree-year{
+    font-size: 15px;
+    font-weight:500;
 }
