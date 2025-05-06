@@ -1,11 +1,29 @@
-import './eduStyle.css';
+import './education.css';
 import EduTemp from '../../components/Education_Block/EduTemp.jsx';
 
 function Education(){
+    const degree = {
+        university: "Eastern University Srilanka",
+        name: "Bachelor of Science in Computer Science",
+        year: "2020 - 2024",
+        description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on Neural Network Optimization Techniques.",
+        keyCourses: ["Advanced Algorithms", "Deep Learning", "Computer Vision", "Natural Language Processing"],
+        achievements: ["Graduated with Honors", "Dean's List (all semesters)", "AI Research Assistant"]
+    };
     return(
         <>
             <h1 className='Edu-Tital'>Education</h1>
-            <EduTemp/>
+            {degree.map((degree, id) => (
+                <EduTemp
+                    key={id}
+                    university={degree.university}
+                    name={degree.name}
+                    year={degree.year}
+                    description={degree.description}
+                    keyCourses={degree.keyCourses}
+                    achievements={degree.achievements}
+                    />
+            ))}
         </>
     )
 }

@@ -1,4 +1,4 @@
-import Template from '../../components/Project_block/template';
+import Template from '../../components/Project_block/Template.jsx';
 import project1Image from '../page3/images/600x300.png';
 import './Projects.css';
 
