@@ -77,7 +77,77 @@
     overflow: hidden; /* Hide overflowing content */
     transition: height 0.3s ease; /* Smooth height transition */
 }
-
 .degree-scroll.expanded {
     height: auto; /* Expand to fit content */
+}
+@media (max-width: 768px) {
+    .education-container {
+        width: 90%; 
+        max-width: 90%;
+        margin: 10px auto; 
+    }
+
+    .education-header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px 15px; 
+    }
+
+    .toggle-icon {
+        margin-left: 0; 
+        margin-top: 10px; 
+        align-self: flex-end; 
+    }
+
+    .degree-content {
+        padding: 10px 15px; 
+    }
+
+    .description {
+        font-size: 18px; 
+    }
+
+    .key-course {
+        font-size: 14px; 
+    }
+
+    .key-course-list-items::before {
+        width: 20px; 
+        font-size: 12px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .education-container {
+        width: 100%; 
+        max-width: 100%;
+        margin: 5px auto; 
+    }
+
+    .education-header {
+        padding: 10px; 
+    }
+
+    .degree-content {
+        padding: 10px; 
+    }
+
+    .description {
+        font-size: 16px; 
+    }
+
+    .key-course {
+        font-size: 13px; 
+    }
+
+    .key-course-list-items::before {
+        width: 18px; 
+        height: 18px; 
+        font-size: 10px; 
+    }
+
+    .toggle-icon {
+        font-size: 1rem; 
+    }
 }
