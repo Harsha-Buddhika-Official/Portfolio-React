@@ -57,7 +57,7 @@ body.light-mode .icons-container img {
 
 .titals {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 body.light-mode .titals {
@@ -73,4 +73,15 @@ body.light-mode .titals {
 .icon-item.show {
     opacity: 1;
     transform: translateY(0);
+}
+.skills-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00a3fe, #00faf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px;
+    margin: 20px;
 }

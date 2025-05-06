@@ -1,6 +1,6 @@
 import Template from '../../components/Project_block/template';
-import './Projects.css';
 import project1Image from '../page3/images/600x300.png';
+import './Projects.css';
 
 function Projects() {
   const projects = [
@@ -36,18 +36,21 @@ function Projects() {
   ];
 
   return (
-    <div className="projects-container">
-      {projects.map((project, index) => (
-        <Template
-          key={index}
-          name={project.name}
-          image={project.image}
-          description={project.description}
-          technologies={project.technologies}
-          github={project.github}
-        />
-      ))}
-    </div>
+    <>
+      <h1 className='project-tital'>Projects</h1>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <Template
+            key={index}
+            name={project.name}
+            image={project.image}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 

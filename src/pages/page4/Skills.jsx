@@ -42,7 +42,7 @@ function Skills() {
 
     return (
         <div className='skills-container'>
-            <h1 className='titals'>Tech Stack & Tools</h1>
+            <h1 className='skills-title'>Tech Stack & Tools</h1>
             <div className="icons-container">
                 <div className="learned">
                     <div className="icon-item">
