@@ -1,31 +1,50 @@
+import React, { useState } from 'react';
 import './EduTempStyle.css';
 
-function EduTemp(name, university, year, description, keyCourses, achievements) {
-    return(
-        <>
-            <div>
-                <h2 className='university-name'>{university}</h2>
-                <h3 className='degree'>{name}</h3>
-                <h4 className='degree-year'>{year}</h4>
+function EduTemp({ name, university, year, description, keyCourses, achievements }) {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleExpand = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    return (
+        <div className="education-item-container">
+            <div className="education-header" onClick={toggleExpand}>
+                <div>
+                    <h2 className="university-name">
+                        🎓 {university}
+                    </h2>
+                    <h3 className="degree">{name}</h3>
+                    <h4 className="degree-year">
+                        📅 {year}
+                    </h4>
+                </div>
+                <div className="toggle-icon">{isExpanded ? '▲' : '▼'}</div>
             </div>
-            <div>
-                <p>{description}</p>
-                <h5>Key Course</h5>
-                <ol>
-                    <li>Advanced Algorithms</li>
-                    <li>Deep Learning</li>
-                    <li>Computer Vision</li>
-                    <li>Natural Language Processing</li>
-                </ol>
-                <h5>Achievements</h5>
-                <ul>
-                    <li>Graduated with Honors</li>
-                    <li>Dean's List (all semesters)</li>
-                    <li>AI Research Assistant</li>
-                </ul>
-            </div>
-        </>
-    )
-    
+            {isExpanded && (
+                <div className="degree-scroll">
+                    <p className="description">{description}</p>
+                    <h5 className="key-course">Key Courses</h5>
+                    <ol className="key-course-list">
+                        {keyCourses.map((course, index) => (
+                            <li key={index} className="key-course-list-items">
+                                {index + 1}. {course}
+                            </li>
+                        ))}
+                    </ol>
+                    <h5 className="achievements">Achievements</h5>
+                    <ul className="achievements-list">
+                        {achievements.map((achievement, index) => (
+                            <li key={index} className="achievements-list-items">
+                                • {achievement}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+        </div>
+    );
 }
+
 export default EduTemp;

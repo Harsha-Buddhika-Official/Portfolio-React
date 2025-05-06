@@ -1,0 +1,312 @@
+/* Education Card Styles */
+.education-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(229, 231, 235, 1);
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-card-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .education-card-content {
+    flex: 1;
+  }
+  
+  /* Institution Info */
+  .institution-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .institution-icon {
+    color: #3b82f6;
+    margin-right: 0.5rem;
+  }
+  
+  .institution-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .degree-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  /* Period Info */
+  .period-wrapper {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .period-icon {
+    margin-right: 0.25rem;
+  }
+  
+  /* Expand Button */
+  .expand-button {
+    margin-left: 1rem;
+    padding: 0.25rem;
+    border-radius: 9999px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .expand-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .chevron-icon {
+    color: #6b7280;
+  }
+  
+  /* Expanded Card Details */
+  .education-card-details {
+    padding: 0 1.5rem 1.5rem;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 0.5rem;
+  }
+  
+  .education-description {
+    margin-bottom: 1rem;
+    color: #4b5563;
+    line-height: 1.5;
+  }
+  
+  /* Course Section */
+  .courses-section, .achievements-section {
+    margin-bottom: 1rem;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .courses-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  @media (min-width: 768px) {
+    .courses-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .course-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .course-number {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 9999px;
+    background-color: #e0f2fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    margin-top: 2px;
+  }
+  
+  .course-number span {
+    color: #0369a1;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .course-name {
+    color: #4b5563;
+  }
+  
+  /* Achievements List */
+  .achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .achievement-item {
+    display: flex;
+    align-items: center;
+    color: #4b5563;
+  }
+  
+  .achievement-bullet {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    margin-right: 0.5rem;
+  }
+  
+  /* Education Tab Container */
+  .education-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Header Styling */
+  .education-header {
+    margin-bottom: 2rem;
+  }
+  
+  .education-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+  }
+  
+  .education-underline {
+    height: 4px;
+    width: 5rem;
+    background-color: #3b82f6;
+    border-radius: 4px;
+  }
+  
+  /* Education List */
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .education-item-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.education-item-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.university-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.degree {
+    font-size: 16px;
+    color: #555555;
+    margin: 4px 0;
+}
+
+.degree-year {
+    font-size: 14px;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toggle-icon {
+    font-size: 16px;
+    color: #888888;
+    transition: transform 0.3s ease;
+}
+
+.degree-scroll {
+    margin-top: 16px;
+    padding-top: 8px;
+    border-top: 1px solid #e0e0e0;
+    animation: slideDown 0.3s ease;
+}
+
+.description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.key-course,
+.achievements {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 12px;
+}
+
+.key-course-list,
+.achievements-list {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.key-course-list-items,
+.achievements-list-items {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 4px;
+}
+
+.key-course-list-items::before {
+    content: counter(item) '. ';
+    counter-increment: item;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.achievements-list-items::before {
+    content: '• ';
+    color: #007bff;
+    font-weight: bold;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
