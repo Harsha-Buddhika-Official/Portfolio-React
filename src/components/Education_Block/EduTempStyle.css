@@ -70,3 +70,14 @@
     font-size: 15px;
     font-weight:500;
 }
+.degree-scroll {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflowing content */
+    transition: height 0.3s ease; /* Smooth height transition */
+}
+
+.degree-scroll.expanded {
+    height: auto; /* Expand to fit content */
+}
