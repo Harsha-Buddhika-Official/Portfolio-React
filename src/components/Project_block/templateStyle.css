@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .template-container{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;

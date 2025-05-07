@@ -24,6 +24,7 @@ body.light-mode {
 .skills-container {
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .learned, .currently-learning, .skills {
@@ -38,7 +39,17 @@ body.light-mode {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    border: 1px solid transparent; /* Add transparent border by default */
+    border-radius: 10px;
 }
+
+.icon-item:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transition: transform 0.3s ease;
+    border: 1px solid #ffffff; /* Make border visible on hover */
+} 
 
 .icon-name {
     margin-top: 5px;
