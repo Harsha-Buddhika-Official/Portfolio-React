@@ -7,25 +7,25 @@ import linkedin from './icon/linkedin.png';
 function Footer() {
     const socialLinks = [
         {
+            icon: linkedin,
+            url: "https://www.linkedin.com/in/harsha-buddhika/",
+            alt: "LinkedIn"
+        },
+        {
             icon: facebook,
-            url: "https://facebook.com/your-profile",
+            url: "https://www.facebook.com/harsha.buddika.5623",
             alt: "Facebook"
         },
         {
             icon: github,
-            url: "https://github.com/your-profile",
+            url: "https://github.com/Harsha-Buddhika-Official",
             alt: "GitHub"
         },
         {
             icon: instagram,
-            url: "https://instagram.com/your-profile",
+            url: "https://www.instagram.com/m_r_harsha/",
             alt: "Instagram"
         },
-        {
-            icon: linkedin,
-            url: "https://linkedin.com/in/your-profile",
-            alt: "LinkedIn"
-        }
     ];
 
     return (
