@@ -12,7 +12,6 @@
     --moon: url('/src/components/Navigation_Bar/DarkMode/assets/Moon.svg');
   }
   
-  /* Mode Classes */
   body.light-mode {
     background-color: var(--light-bg);
     color: var(--light-text);
@@ -25,7 +24,6 @@
     transition: all 0.3s ease;
   }
   
-  /* Toggle Container */
   .theme-toggle {
     display: flex;
     justify-content: center;
@@ -39,8 +37,7 @@
     width: var(--toggle-size);
     height: calc(var(--toggle-size) / 2);
   }
-  
-  /* Hide default checkbox */
+
   .toggle {
     opacity: 0;
     width: 0;
@@ -48,7 +45,6 @@
     position: absolute;
   }
   
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -75,8 +71,7 @@
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Dark mode state */
+
   input:checked + .slider {
     background-color: var(--toggle-bg-dark);
   }
@@ -86,8 +81,7 @@
     background-color: var(--switch-dark);
     background-image: var(--moon);
   }
-  
-  /* Focus styling */
+
   input:focus + .slider {
     box-shadow: 0 0 2px var(--toggle-bg-dark);
   }

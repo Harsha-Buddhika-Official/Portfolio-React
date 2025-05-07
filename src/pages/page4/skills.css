@@ -1,12 +1,8 @@
-body {
+body.dark-mode .skills-container {
     background-color: #0f1525;
     color: #ffffff;
 }
 
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
 
 .icons-container {
     display: flex;
@@ -39,16 +35,16 @@ body.light-mode {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    border: 1px solid transparent; /* Add transparent border by default */
+    border: 1px solid transparent; 
     border-radius: 10px;
 }
 
 .icon-item:hover {
-    transform: scale(1.1); /* Scale up on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Add a background color on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease;
-    border: 1px solid #ffffff; /* Make border visible on hover */
+    border: 1px solid #ffffff; 
 } 
 
 .icon-name {

@@ -7,11 +7,13 @@ import Education from './pages/page5/Education.jsx';
 import Contact from './pages/page6/Contact.jsx';
 import Footer from './pages/Footer/Footer.jsx';
 import './App.css'
+import PageAbout from './seperate-pages/about/PageAbout.jsx';
+import PageProjects from './seperate-pages/projects/PageProjects.jsx';
 
 function App() {
   return (
     <>
-      <div className='Navigator'>
+      {/* <div className='Navigator'>
         <NavigationBar/>
       </div>
       <HomePage/>
@@ -22,7 +24,9 @@ function App() {
         <Education/>
       </div>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
+      {/* <PageAbout/> */}
+      <PageProjects/>
     </>
   );
 }

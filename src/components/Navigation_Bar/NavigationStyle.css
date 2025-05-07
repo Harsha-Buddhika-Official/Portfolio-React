@@ -8,6 +8,7 @@
   z-index: 1000;
   margin: 10px 0px;
   padding: 7px 0px;
+  padding: 1rem; 
 }
 
 .navbar a {
@@ -50,10 +51,10 @@
 
 .navbar-item {
   color: #555;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   position: relative;
-  margin-left: 2px;
+  margin-left: 7px;
 }
 
 .navbar-item:hover {
