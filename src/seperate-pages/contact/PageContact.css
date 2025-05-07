@@ -19,13 +19,9 @@ body.light-mode .page-about {
     text-align: center;
     height: 100vh;
     color: #ffffff;
-    background-image: url(../image/light.jpg);
+    background-image: url(../image/dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.page-about{
-    margin-bottom: 20px;
 }
 
 .Navigator {
@@ -51,9 +47,6 @@ body.light-mode .Navigator .navbar-item {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #ffffff;
-}
-.Edu-Tital{
-    display: none;
 }
 .page-about-content{
     background-color: rgba(255, 255, 255, 0.1);

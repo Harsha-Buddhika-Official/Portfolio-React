@@ -52,7 +52,7 @@ body.light-mode .Navigator .navbar-item {
     margin-bottom: 20px;
     color: #ffffff;
 }
-.Edu-Tital{
+.project-tital{
     display: none;
 }
 .page-about-content{
@@ -62,4 +62,10 @@ body.light-mode .Navigator .navbar-item {
     border: 2px solid #ffffff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
+}
+.page-education{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
