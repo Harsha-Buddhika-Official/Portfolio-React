@@ -1,5 +1,6 @@
 import './education.css';
 import EduTemp from '../../components/Education_Block/EduTemp.jsx';
+import Uni from './logo/UniLogo.png'
 
 function Education(){
     const degrees = [
@@ -9,7 +10,8 @@ function Education(){
             year: "2020 - 2024",
             description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on Neural Network Optimization Techniques.",
             keyCourses: ["Advanced Algorithms", "Deep Learning", "Computer Vision", "Natural Language Processing"],
-            achievements: ["Graduated with Honors", "Dean's List (all semesters)", "AI Research Assistant"]
+            achievements: ["Graduated with Honors", "Dean's List (all semesters)", "AI Research Assistant"],
+            logo: Uni,
         },
         {
             university: "Eastern University Srilanka",
@@ -33,6 +35,7 @@ function Education(){
                     description={degree.description}
                     keyCourses={degree.keyCourses}
                     achievements={degree.achievements}
+                    logo={degree.logo}
                     />
             ))}
         </>

@@ -7,6 +7,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.logo{
+    width: 90px;
+    height: auto;
+    padding-right: 20px;
+}
 .education-header{
     padding: 0px 20px;
 }
@@ -15,6 +20,18 @@
     justify-content: space-between; /* Space between the title and the toggle icon */
     align-items: center;           /* Vertically center the items */
     cursor: pointer;               /* Add a pointer cursor for better UX */
+}
+.degree-year{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight:500;
+}
+.calander {
+    width: 17px;
+    height: auto;
+    filter: invert(43%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(85%) contrast(85%);
 }
 .toggle-icon {
     margin-left: auto;             /* Push the icon to the far right */
@@ -34,6 +51,7 @@
 .key-course{
     font-size: 15px;
     font-weight:bold;
+    margin-bottom: 10px;
 }
 .key-course-list {
     list-style: none; /* Remove default list styling */
@@ -66,9 +84,13 @@
 .achievements-list-items::marker{
     color: #2563ec;
 }
-.degree-year{
-    font-size: 15px;
-    font-weight:500;
+.achievements{
+    font-size: 16px;
+    font-weight:bold;
+    margin-bottom: 0px;
+}
+.achievements-list-items{
+    padding-bottom: 5px;
 }
 .degree-scroll {
     border-top: 1px solid rgba(0, 0, 0, 0.1);

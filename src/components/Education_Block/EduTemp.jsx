@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './EduTempStyle.css';
+import calander from './icons/calander.png';
 
-function EduTemp({ name, university, year, description, keyCourses, achievements }) {
+function EduTemp({ name, university, year, description, keyCourses, achievements,logo }) {
     const [isExpanded, setIsExpanded] = useState(false);
     const contentRef = useRef(null);
 
@@ -22,13 +23,15 @@ function EduTemp({ name, university, year, description, keyCourses, achievements
         <div className="education-container">
             <div className="education-item-container">
                 <div className="education-header" onClick={toggleExpand}>
+                <img src={logo} alt="Education center logo" className='logo'/>
                     <div>
                         <h2 className="university-name">
                             🎓 {university}
                         </h2>
                         <h3 className="degree">{name}</h3>
                         <h4 className="degree-year">
-                            📅 {year}
+                            <img src={calander} alt="calander icon" className='calander'/>
+                            {year}
                         </h4>
                     </div>
                     <div className="toggle-icon">{isExpanded ? '▲' : '▼'}</div>
