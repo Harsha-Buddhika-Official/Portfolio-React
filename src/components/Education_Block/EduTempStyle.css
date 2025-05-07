@@ -1,175 +1,214 @@
 .education-container {
-    background-color: white;
-    color: black;
-    width: 600px;
-    max-width: 70%;
-    margin: 0 auto 20px; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
+  width: 600px;
+  max-width: 70%;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.logo{
-    width: 90px;
-    height: auto;
-    padding-right: 20px;
+
+.logo {
+  width: 90px;
+  height: auto;
+  padding-right: 20px;
 }
-.education-header{
-    padding: 0px 20px;
-}
+
 .education-header {
-    display: flex;
-    justify-content: space-between; /* Space between the title and the toggle icon */
-    align-items: center;           /* Vertically center the items */
-    cursor: pointer;               /* Add a pointer cursor for better UX */
+  padding: 0px 20px;
 }
-.degree-year{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    font-weight:500;
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  /* Space between the title and the toggle icon */
+  align-items: center;
+  /* Vertically center the items */
+  cursor: pointer;
+  /* Add a pointer cursor for better UX */
 }
+
+.degree-year {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .calander {
-    width: 17px;
-    height: auto;
-    filter: invert(43%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(85%) contrast(85%);
+  width: 17px;
+  height: auto;
+  filter: invert(43%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(85%)
+    contrast(85%);
 }
+
 .toggle-icon {
-    margin-left: auto;             /* Push the icon to the far right */
-    font-size: 1.2rem;             /* Adjust the size of the icon if needed */
+  margin-left: auto;
+  /* Push the icon to the far right */
+  font-size: 1.2rem;
+  /* Adjust the size of the icon if needed */
 }
-.degree-scroll{
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 0;
-}
-.degree-content{
-    padding: 0px 20px;
-    padding-bottom: 5px;
-}
-.description {
-    font-size: 20px;
-}
-.key-course{
-    font-size: 15px;
-    font-weight:bold;
-    margin-bottom: 10px;
-}
-.key-course-list {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-    counter-reset: list-item; /* Reset the counter for this list */
-}
-.key-course-list-items {
-    position: relative;
-    padding-left: 35px; /* Add space for the number circle */
-    margin-bottom: 12px; /* Add spacing between list items */
-}
-.key-course-list-items::before {
-    content: counter(list-item); /* Use the counter value */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #dbeafe; /* Blue background */
-    color: #2563ec; /* White text */
-    width: 24px; /* Circle size */
-    height: 24px; /* Circle size */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px; /* Adjust font size */
-    font-weight: bold;
-}
-.achievements-list-items::marker{
-    color: #2563ec;
-}
-.achievements{
-    font-size: 16px;
-    font-weight:bold;
-    margin-bottom: 0px;
-}
-.achievements-list-items{
-    padding-bottom: 5px;
-}
+
 .degree-scroll {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 0;
-    height: 0; /* Initially collapsed */
-    overflow: hidden; /* Hide overflowing content */
-    transition: height 0.3s ease; /* Smooth height transition */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
+
+.degree-content {
+  padding: 0px 20px;
+  padding-bottom: 5px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.key-course {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.key-course-list {
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  counter-reset: list-item;
+  /* Reset the counter for this list */
+}
+
+.key-course-list-items {
+  position: relative;
+  padding-left: 35px;
+  /* Add space for the number circle */
+  margin-bottom: 12px;
+  /* Add spacing between list items */
+}
+
+.key-course-list-items::before {
+  content: counter(list-item);
+  /* Use the counter value */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #dbeafe;
+  /* Blue background */
+  color: #2563ec;
+  /* White text */
+  width: 24px;
+  /* Circle size */
+  height: 24px;
+  /* Circle size */
+  border-radius: 50%;
+  /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  /* Adjust font size */
+  font-weight: bold;
+}
+
+.achievements-list-items::marker {
+  color: #2563ec;
+}
+
+.achievements {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.achievements-list-items {
+  padding-bottom: 5px;
+}
+
+.degree-scroll {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  height: 0;
+  /* Initially collapsed */
+  overflow: hidden;
+  /* Hide overflowing content */
+  transition: height 0.3s ease;
+  /* Smooth height transition */
+}
+
 .degree-scroll.expanded {
-    height: auto; /* Expand to fit content */
+  height: auto;
 }
+
 @media (max-width: 768px) {
-    .education-container {
-        width: 90%; 
-        max-width: 90%;
-        margin: 10px auto; 
-    }
+  .education-container {
+    width: 95%;
+    max-width: 95%;
+    margin: 15px auto;
+  }
 
-    .education-header {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 10px 15px; 
-    }
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
 
-    .toggle-icon {
-        margin-left: 0; 
-        margin-top: 10px; 
-        align-self: flex-end; 
-    }
+  .toggle-icon {
+    margin-left: 0;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
 
-    .degree-content {
-        padding: 10px 15px; 
-    }
+  .degree-content {
+    padding: 15px;
+  }
 
-    .description {
-        font-size: 18px; 
-    }
+  .description {
+    font-size: 16px;
+  }
 
-    .key-course {
-        font-size: 14px; 
-    }
+  .key-course {
+    font-size: 13px;
+  }
 
-    .key-course-list-items::before {
-        width: 20px; 
-        font-size: 12px; 
-    }
+  .key-course-list-items::before {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
 }
-
 
 @media (max-width: 480px) {
-    .education-container {
-        width: 100%; 
-        max-width: 100%;
-        margin: 5px auto; 
-    }
+  .education-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+  }
 
-    .education-header {
-        padding: 10px; 
-    }
+  .education-header {
+    padding: 10px;
+  }
 
-    .degree-content {
-        padding: 10px; 
-    }
+  .degree-content {
+    padding: 10px;
+  }
 
-    .description {
-        font-size: 16px; 
-    }
+  .description {
+    font-size: 14px;
+  }
 
-    .key-course {
-        font-size: 13px; 
-    }
+  .key-course {
+    font-size: 12px;
+  }
 
-    .key-course-list-items::before {
-        width: 18px; 
-        height: 18px; 
-        font-size: 10px; 
-    }
+  .key-course-list-items::before {
+    width: 16px;
+    height: 16px;
+    font-size: 9px;
+  }
 
-    .toggle-icon {
-        font-size: 1rem; 
-    }
+  .toggle-icon {
+    font-size: 0.9rem;
+  }
 }
