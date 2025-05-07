@@ -19,7 +19,7 @@ body.light-mode .page-about {
     text-align: center;
     height: 100vh;
     color: #ffffff;
-    background-image: url(../image/dark.jpg);
+    background-image: url(../image/light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -55,4 +55,11 @@ body.light-mode .Navigator .navbar-item {
 .project-tital{
     display: none;
 }
-
+.page-about-content{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}

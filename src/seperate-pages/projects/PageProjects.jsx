@@ -12,7 +12,7 @@ function PageProjects() {
       <div className='page-about'>
           <div className='page-about-content'>
               <h1>Projects</h1>
-              <p>This is the about page.</p>
+              <p>This is the Project page.</p>
           </div>
       </div>
       <Projects/>

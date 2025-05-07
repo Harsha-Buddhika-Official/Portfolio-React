@@ -37,7 +37,7 @@ function NavigationBar() {
             <a href="#home" className="mobile-menu-item">Home</a>
             <a href="#about" className="mobile-menu-item">About</a>
             <a href="#projects" className="mobile-menu-item">Project</a>
-            <a href="#results" className="mobile-menu-item">Results</a>
+            <a href="#education" className="mobile-menu-item">Education</a>
             <a href="#contact" className="mobile-menu-item">Contact</a>
           </div>
         )}
@@ -46,7 +46,7 @@ function NavigationBar() {
           <a href="#home" className="navbar-item">Home</a>
           <a href="#about" className="navbar-item">About</a>
           <a href="#projects" className="navbar-item">Projects</a>
-          <a href="#results" className="navbar-item">Results</a>
+          <a href="#education" className="navbar-item">Education</a>
           <a href="#contact" className="navbar-item">Contact</a>
           
           <div className="dark-mode-toggle">

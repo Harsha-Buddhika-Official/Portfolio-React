@@ -25,7 +25,6 @@ function App() {
       </div>
       <Contact/>
       <Footer/> */}
-      {/* <PageAbout/> */}
       <PageProjects/>
     </>
   );
