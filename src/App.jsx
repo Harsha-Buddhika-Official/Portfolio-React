@@ -11,6 +11,7 @@ import PageAbout from './seperate-pages/about/PageAbout.jsx';
 import PageProjects from './seperate-pages/projects/PageProjects.jsx';
 import PageEducation from './seperate-pages/education/PageEducation.jsx';
 import PageContact from './seperate-pages/contact/PageContact.jsx';
+import Results from './components/Results_block/results.jsx';
 
 function App() {
   return (
@@ -27,8 +28,7 @@ function App() {
       </div>
       <Contact/>
       <Footer/> */}
-      {/* <PageEducation/> */}
-      <PageContact/>
+      <PageEducation/>
     </>
   );
 }

@@ -2,7 +2,8 @@ import './PageEducation.css';
 import NavigationBar from '../../components/Navigation_Bar/NavigationBar.jsx';
 import Education from '../../pages/page5/Education.jsx';
 import Footer from '../../pages/Footer/Footer.jsx';
-import Skills from '../../pages/page4/Skills.jsx'
+import Skills from '../../pages/page4/Skills.jsx';
+import ResultsMain from './Results-Main/ResultsMain.jsx'; // Import the ResultsMain component
 
 function PageEducation() {
   return (
@@ -20,6 +21,7 @@ function PageEducation() {
         <Education/>
       </div>
       <Skills/>
+      <ResultsMain/>
       <Footer/>
     </>
   );
