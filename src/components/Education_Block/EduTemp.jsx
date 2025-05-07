@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './EduTempStyle.css';
 import calander from './icons/calander.png';
+import icon from './icons/certificate-Icon.png';
 
 function EduTemp({ name, university, year, description, keyCourses, achievements,logo }) {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -26,7 +27,8 @@ function EduTemp({ name, university, year, description, keyCourses, achievements
                 <img src={logo} alt="Education center logo" className='logo'/>
                     <div>
                         <h2 className="university-name">
-                            🎓 {university}
+                            <img src={icon} alt="certificate icon" className='icon'/>
+                             {university}
                         </h2>
                         <h3 className="degree">{name}</h3>
                         <h4 className="degree-year">

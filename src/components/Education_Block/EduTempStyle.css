@@ -28,6 +28,20 @@
   /* Add a pointer cursor for better UX */
 }
 
+.icon {
+  width: 25px;
+  height: auto;
+  margin-right: 5px;
+  filter: invert(47%) sepia(95%) saturate(1506%) hue-rotate(200deg)
+    brightness(102%) contrast(101%);
+  color: #2563ec;
+}
+
+.university-name {
+  display: flex;
+  align-items: center;
+}
+
 .degree-year {
   display: flex;
   align-items: center;

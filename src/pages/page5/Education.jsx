@@ -13,14 +13,6 @@ function Education(){
             achievements: ["Graduated with Honors", "Dean's List (all semesters)", "AI Research Assistant"],
             logo: Uni,
         },
-        {
-            university: "Eastern University Srilanka",
-            name: "Bachelor of Science in Computer Science",
-            year: "2020 - 2024",
-            description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on Neural Network Optimization Techniques.",
-            keyCourses: ["Advanced Algorithms", "Deep Learning", "Computer Vision", "Natural Language Processing"],
-            achievements: ["Graduated with Honors", "Dean's List (all semesters)", "AI Research Assistant"]
-        },
     ];
 
     return(
