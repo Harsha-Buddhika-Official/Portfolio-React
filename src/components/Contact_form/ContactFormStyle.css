@@ -1,0 +1,129 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  max-width: 80;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.2);
+}
+
+button[type="submit"] {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+.send {
+  background: linear-gradient(90deg, #00a3fe, #00faf0);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 163, 254, 0.5);
+  border: 3px solid rgba(0, 163, 254, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 0 2rem;
+    gap: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  button[type="submit"] {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  button[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+
+  .send {
+    box-shadow: 0 3px 15px rgba(0, 163, 254, 0.4);
+  }
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+  background: rgba(0, 0, 0, 0.05);
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+body.light-mode .form-group input:focus,
+body.light-mode .form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.15);
+  background: white;
+}
+body.light-mode .send {
+  background: linear-gradient(90deg, #0088d1, #00c5bd);
+  box-shadow: 0 4px 15px rgba(0, 136, 209, 0.3);
+  border: none;
+}

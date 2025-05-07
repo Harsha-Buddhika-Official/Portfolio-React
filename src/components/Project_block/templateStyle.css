@@ -17,11 +17,10 @@ body{
     transition: transform 0.3s ease; 
 }
 
-.image-container:hover {
+.template-container:hover .image-container {
     transform: scale(1.05);
-    border-radius: 8px;
-
 }
+
 .text-container{
     text-align: left;
 }

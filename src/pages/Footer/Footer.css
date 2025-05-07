@@ -1,0 +1,39 @@
+.footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.footer-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Light mode styles */
+body.light-mode .footer {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode filter for icons */
+body.dark-mode .social-icon {
+  filter: brightness(0) invert(1);
+}
