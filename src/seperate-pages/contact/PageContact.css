@@ -19,7 +19,7 @@ body.light-mode .page-about {
     text-align: center;
     height: 100vh;
     color: #ffffff;
-    background-image: url(../image/dark.jpg);
+    background-image: url(../image/light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

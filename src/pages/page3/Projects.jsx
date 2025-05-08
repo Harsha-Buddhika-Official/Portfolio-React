@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Template from '../../components/Project_block/Template.jsx';
 import img1 from './Images/portfolio-react.png';
 import img2 from './Images/portfolio.png';
@@ -35,22 +36,45 @@ function Projects() {
       technologies: ["React", "CSS", "JavaScript"], 
       github: "https://github.com/Harsha-Buddhika-Official/Portfolio-React",
     },
-    
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    const projectElements = document.querySelectorAll('.project-template');
+    projectElements.forEach((element) => observer.observe(element));
+
+    return () => {
+      projectElements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
 
   return (
     <>
       <h1 className='project-tital'>Projects</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
-          <Template
-            key={index}
-            name={project.name}
-            image={project.image}
-            description={project.description}
-            technologies={project.technologies}
-            github={project.github}
-          />
+          <div key={index} className="project-template">
+            <Template
+              name={project.name}
+              image={project.image}
+              description={project.description}
+              technologies={project.technologies}
+              github={project.github}
+            />
+          </div>
         ))}
       </div>
     </>

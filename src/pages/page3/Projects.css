@@ -6,7 +6,8 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.project-tital{
+
+.project-tital {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
@@ -17,3 +18,20 @@
   padding: 0px;
   margin: 0px;
 }
+
+.project-template {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.project-template.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add staggered delay for each project */
+.project-template:nth-child(1) { transition-delay: 0.1s; }
+.project-template:nth-child(2) { transition-delay: 0.2s; }
+.project-template:nth-child(3) { transition-delay: 0.3s; }
+.project-template:nth-child(4) { transition-delay: 0.4s; }
