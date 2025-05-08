@@ -15,7 +15,7 @@ function NavigationBar() {
       <div className="navbar-container">
         <div className="navbar-header">
           <div className="navbar-logo">
-            <a href="/">Portfolio</a>
+            <Link to="/">Portfolio</Link>
           </div>
           {!isMenuOpen && (
             <button className="hamburger-menu" onClick={toggleMenu} aria-label="Open menu">
@@ -35,25 +35,20 @@ function NavigationBar() {
                 <path d="M15 5L5 15M5 5L15 15" stroke="white" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </button>
-            <a href="#home" className="mobile-menu-item">Home</a>
-            <a href="#about" className="mobile-menu-item">About</a>
-            <a href="#projects" className="mobile-menu-item">Project</a>
-            <a href="#education" className="mobile-menu-item">Education</a>
-            <a href="#contact" className="mobile-menu-item">Contact</a>
+            <Link to="/" className="mobile-menu-item" onClick={toggleMenu}>Home</Link>
+            <Link to="/About" className="mobile-menu-item" onClick={toggleMenu}>About</Link>
+            <Link to="/Projects" className="mobile-menu-item" onClick={toggleMenu}>Projects</Link>
+            <Link to="/Education" className="mobile-menu-item" onClick={toggleMenu}>Education</Link>
+            <Link to="/Contact" className="mobile-menu-item" onClick={toggleMenu}>Contact</Link>
           </div>
         )}
         
         <div className="navbar-menu desktop-menu">
-          {/* <Link to="/" className="navbar-item">Home</Link>
+          <Link to="/" className="navbar-item">Home</Link>
           <Link to="/About" className="navbar-item">About</Link>
           <Link to="/Projects" className="navbar-item">Projects</Link>
           <Link to="/Education" className="navbar-item">Education</Link>
-          <Link to="/Contact" className="navbar-item">Contact</Link> */}
-          <a href="#home" className="navbar-item">Home</a>
-          <a href="#about" className="navbar-item">About</a>
-          <a href="#projects" className="navbar-item">Projects</a>
-          <a href="#education" className="navbar-item">Education</a>
-          <a href="#contact" className="navbar-item">Contact</a>
+          <Link to="/Contact" className="navbar-item">Contact</Link>
           
           <div className="dark-mode-toggle">
             <DarkMode/>
