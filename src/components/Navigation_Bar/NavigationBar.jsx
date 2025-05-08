@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navigationStyle.css';
 import DarkMode from './DarkMode/DarkMode';
+import { Link } from 'react-router-dom';
 
 function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,6 +44,11 @@ function NavigationBar() {
         )}
         
         <div className="navbar-menu desktop-menu">
+          {/* <Link to="/" className="navbar-item">Home</Link>
+          <Link to="/About" className="navbar-item">About</Link>
+          <Link to="/Projects" className="navbar-item">Projects</Link>
+          <Link to="/Education" className="navbar-item">Education</Link>
+          <Link to="/Contact" className="navbar-item">Contact</Link> */}
           <a href="#home" className="navbar-item">Home</a>
           <a href="#about" className="navbar-item">About</a>
           <a href="#projects" className="navbar-item">Projects</a>

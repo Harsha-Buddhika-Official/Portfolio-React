@@ -1,33 +1,37 @@
-import HomePage from './pages/HomePage/HomePage.jsx';
-import NavigationBar from './components/Navigation_Bar/NavigationBar.jsx';
-import AboutMe from './pages/page2/AboutMe.jsx';
-import Projects from './pages/page3/Projects.jsx';
-import Skills from './pages/page4/Skills.jsx';
-import Education from './pages/page5/Education.jsx';
-import Contact from './pages/page6/Contact.jsx';
-import Footer from './pages/Footer/Footer.jsx';
+import Main from './Main-Page/Main.jsx';
 import './App.css'
 
 import PageAbout from './seperate-pages/about/PageAbout.jsx';
 import PageProjects from './seperate-pages/projects/PageProjects.jsx';
 import PageEducation from './seperate-pages/education/PageEducation.jsx';
 import PageContact from './seperate-pages/contact/PageContact.jsx';
+import { Route, Router } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className='Navigator'>
-        <NavigationBar/>
-      </div>
-      <HomePage/>
-      <AboutMe/>
-      <Projects/>
-      <Skills/>
-      <div className='Edu'>
-        <Education/>
-      </div>
-      <Contact/>
-      <Footer/>
+      {/* <Router>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Main/>
+            </Route>
+            <Route path="/About">
+              <PageAbout/>
+            </Route>
+            <Route path="/Contact">
+              <PageContact/>
+            </Route>
+            <Route path="/Education">
+              <PageEducation/>
+            </Route>
+            <Route path="/Projects">
+              <PageProjects/>
+            </Route>
+          </Switch>
+        </div>
+      </Router> */}
+      <Main/>
     </>
   );
 }
