@@ -24,7 +24,7 @@ body.light-mode .page-about {
     background-size: cover;
 }
 
-.page-about{
+.page-about {
     margin-bottom: 20px;
 }
 
@@ -36,7 +36,7 @@ body.light-mode .page-about {
     z-index: 1000;
 }
 
-body.light-mode .page-projects-container .navbar-logo a ,
+body.light-mode .page-projects-container .navbar-logo a,
 body.light-mode .page-projects-container .navbar-item {
     color: #fff !important;
 }
@@ -52,11 +52,12 @@ body.light-mode .page-projects-container .navbar-item {
     margin-bottom: 20px;
     color: #ffffff;
 }
-.page-projects-container .project-tital{
+
+.page-projects-container .project-tital {
     display: none;
 }
 
-.page-about-content{
+.page-about-content {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px 30px;
     border-radius: 10px;

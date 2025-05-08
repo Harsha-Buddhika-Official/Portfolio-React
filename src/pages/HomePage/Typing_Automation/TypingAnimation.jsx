@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import './typingAnimation.css';
+import { useState, useEffect } from "react";
+import "./typingAnimation.css";
 
-function TypingAnimation(){
+function TypingAnimation() {
   const phrases = [
     "Computer Science Undergraduate",
     "Software Engineer",
@@ -10,14 +10,14 @@ function TypingAnimation(){
     "Web Developer",
     "Graphic Designer",
   ];
-  
+
   const [displayText, setDisplayText] = useState("");
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
-  
+
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex];
-    
+
     if (isTyping) {
       // Typing effect
       if (displayText.length < currentPhrase.length) {
@@ -25,16 +25,14 @@ function TypingAnimation(){
           setDisplayText(currentPhrase.substring(0, displayText.length + 1));
         }, 100);
         return () => clearTimeout(timer);
-      }
-      else {
+      } else {
         // Pause before erasing
         const timer = setTimeout(() => {
           setIsTyping(false);
         }, 1500);
         return () => clearTimeout(timer);
       }
-    }
-    else {
+    } else {
       // Erasing effect
       if (displayText.length > 0) {
         const timer = setTimeout(() => {
@@ -50,13 +48,13 @@ function TypingAnimation(){
     }
   }, [displayText, phraseIndex, isTyping, phrases]);
   return (
-        <div className="text-container">
-          <span className="dynamic-text">
-            {displayText}
-            <span className="cursor"></span>
-          </span>
-        </div>
+    <div className="text-container">
+      <span className="dynamic-text">
+        {displayText}
+        <span className="cursor"></span>
+      </span>
+    </div>
   );
-};
+}
 
 export default TypingAnimation;

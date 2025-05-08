@@ -1,25 +1,25 @@
-import { useState } from 'react';
-import './contactFormStyle.css';
+import { useState } from "react";
+import "./contactFormStyle.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your form submission logic here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -63,7 +63,9 @@ const ContactForm = () => {
           required
         ></textarea>
       </div>
-      <button type="submit" className='send'>Send Message</button>
+      <button type="submit" className="send">
+        Send Message
+      </button>
     </form>
   );
 };

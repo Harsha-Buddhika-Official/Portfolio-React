@@ -1,35 +1,49 @@
-.about-container{
+.about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 200px 20px;
 }
-.profilePic{
+
+.profilePic {
     width: 300px;
     border-radius: 10px;
     margin-right: 15px;
     box-shadow: 0 0 20px rgba(0, 170, 255, 0.6);
     transition: all 0.3s ease;
 }
-.profilePic:hover{
+
+.profilePic:hover {
     animation: changeImages 2s infinite
 }
-@keyframes changeImages {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 
-    0% { 
-        background-image: url('path-to-image1.jpg'); 
+@keyframes changeImages {
+    0% {
+        transform: scale(1);
     }
-    50% { 
-        background-image: url('path-to-image2.jpg'); 
+
+    50% {
+        transform: scale(1.05);
     }
-    100% { 
-        background-image: url('path-to-image1.jpg'); 
+
+    100% {
+        transform: scale(1);
+    }
+
+    0% {
+        background-image: url('path-to-image1.jpg');
+    }
+
+    50% {
+        background-image: url('path-to-image2.jpg');
+    }
+
+    100% {
+        background-image: url('path-to-image1.jpg');
     }
 }
-.text-container{
+
+.text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +51,8 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.tital-about{
+
+.tital-about {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: 800;
@@ -47,34 +62,40 @@
     padding: 0px;
     margin: 0px;
 }
+
 .light-mode .tital-about {
-    background: linear-gradient(90deg,rgba(0, 170, 255, 0.6),  #00a3fe);
+    background: linear-gradient(90deg, rgba(0, 170, 255, 0.6), #00a3fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.paragraph{
+.paragraph {
     text-align: left;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
         padding: 100px 20px;
     }
+
     .profilePic {
         width: 200px;
         margin-bottom: 20px;
     }
+
     .text-container {
         margin-left: 0;
         margin-right: 0;
     }
+
     .tital-about {
         font-size: 30px;
     }
+
     .paragraph {
         font-size: 16px;
         text-align: center;

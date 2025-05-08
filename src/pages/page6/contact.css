@@ -34,6 +34,7 @@ body.light-mode .contact-content {
   border: 3px solid rgba(0, 0, 0, 0.1);
   color: #333;
 }
-body.light-mode .contact-content p{
+
+body.light-mode .contact-content p {
   color: #707070;
 }

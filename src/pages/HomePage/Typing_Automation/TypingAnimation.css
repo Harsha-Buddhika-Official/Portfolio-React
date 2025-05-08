@@ -1,11 +1,15 @@
 .text-container {
-  height: auto; /* Let it expand based on content */
+  height: auto;
+  /* Let it expand based on content */
   max-width: 100%;
-  white-space: normal; /* Allow text wrapping */
+  white-space: normal;
+  /* Allow text wrapping */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  text-align: center; /* Optional: center the text */
-  padding: 0 1rem; /* Optional: horizontal padding */
+  text-align: center;
+  /* Optional: center the text */
+  padding: 0 1rem;
+  /* Optional: horizontal padding */
 }
 
 .dynamic-text {
@@ -25,7 +29,15 @@
 }
 
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

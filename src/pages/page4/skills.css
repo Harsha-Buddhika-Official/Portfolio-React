@@ -23,7 +23,9 @@ body.dark-mode .skills-container {
     margin-top: 10px;
 }
 
-.learned, .currently-learning, .skills {
+.learned,
+.currently-learning,
+.skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -35,17 +37,17 @@ body.dark-mode .skills-container {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     border-radius: 10px;
 }
 
 .icon-item:hover {
-    transform: scale(1.1); 
-    background-color: rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    border: 1px solid #ffffff; 
-} 
+    border: 1px solid #ffffff;
+}
 
 .icon-name {
     margin-top: 5px;
@@ -55,11 +57,13 @@ body.dark-mode .skills-container {
 }
 
 body.light-mode .icon-name {
-    color: #000000; /* Change icon name color in light mode */
+    color: #000000;
+    /* Change icon name color in light mode */
 }
 
 body.light-mode .icons-container img {
-    filter: brightness(0); /* Change icon color to black in light mode */
+    filter: brightness(0);
+    /* Change icon color to black in light mode */
 }
 
 .titals {
@@ -68,7 +72,8 @@ body.light-mode .icons-container img {
 }
 
 body.light-mode .titals {
-    color: #000000; /* Change title color in light mode */
+    color: #000000;
+    /* Change title color in light mode */
 }
 
 .icon-item {
@@ -81,7 +86,8 @@ body.light-mode .titals {
     opacity: 1;
     transform: translateY(0);
 }
-.skills-title{
+
+.skills-title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;

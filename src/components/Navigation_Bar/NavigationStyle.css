@@ -8,7 +8,7 @@
   z-index: 1000;
   margin: 10px 0px;
   padding: 7px 0px;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .navbar a {
@@ -71,6 +71,7 @@
   background-color: #63b3ed;
   transition: width 0.3s ease;
 }
+
 .navbar-item:hover::after {
   color: #63b3ed;
   width: 100%;
@@ -175,16 +176,20 @@ body.dark-mode .navbar-item::after {
   background: #63b3ed;
   transition: width 0.3s ease;
 }
+
 .mobile-menu-item:hover::after {
   color: #63b3ed;
   width: 100%;
 }
+
 .mobile-menu-item:hover {
   color: #63b3ed;
 }
+
 body.dark-mode .mobile-menu-item:hover {
   color: #63b3ed;
 }
+
 body.dark-mode .mobile-menu-item::after {
   background-color: #63b3ed;
 }

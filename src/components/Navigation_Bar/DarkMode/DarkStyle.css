@@ -1,87 +1,87 @@
 :root {
-    --light-bg: #ededed;
-    --light-text: #212529;
-    --dark-bg: #0f1525;
-    --dark-text: #e0e0e0;
-    --toggle-size: 50px;
-    --toggle-bg-light: #e9ecef;
-    --toggle-bg-dark: #2d3436;
-    --switch-light: #ffd43b; 
-    --switch-dark: #ffffff; 
-    --sun: url('/src/components/Navigation_Bar/DarkMode/assets/Sun.svg');
-    --moon: url('/src/components/Navigation_Bar/DarkMode/assets/Moon.svg');
-  }
-  
-  body.light-mode {
-    background-color: var(--light-bg);
-    color: var(--light-text);
-    transition: all 0.3s ease;
-  }
-  
-  body.dark-mode {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-    transition: all 0.3s ease;
-  }
-  
-  .theme-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-  }
-  
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: var(--toggle-size);
-    height: calc(var(--toggle-size) / 2);
-  }
+  --light-bg: #ededed;
+  --light-text: #212529;
+  --dark-bg: #0f1525;
+  --dark-text: #e0e0e0;
+  --toggle-size: 50px;
+  --toggle-bg-light: #e9ecef;
+  --toggle-bg-dark: #2d3436;
+  --switch-light: #ffd43b;
+  --switch-dark: #ffffff;
+  --sun: url('/src/components/Navigation_Bar/DarkMode/assets/Sun.svg');
+  --moon: url('/src/components/Navigation_Bar/DarkMode/assets/Moon.svg');
+}
 
-  .toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--toggle-bg-light);
-    transition: .4s;
-    border-radius: calc(var(--toggle-size) / 2);
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: calc(var(--toggle-size) / 2 - 6px);
-    width: calc(var(--toggle-size) / 2 - 6px);
-    left: 7px;
-    bottom: 3px;
-    background-color: var(--switch-light);
-    background-image: var(--sun);
-    transition: .4s;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
+body.light-mode {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: all 0.3s ease;
+}
 
-  input:checked + .slider {
-    background-color: var(--toggle-bg-dark);
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(calc(var(--toggle-size) / 2 - 6px));
-    background-color: var(--switch-dark);
-    background-image: var(--moon);
-  }
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  transition: all 0.3s ease;
+}
 
-  input:focus + .slider {
-    box-shadow: 0 0 2px var(--toggle-bg-dark);
-  }
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: var(--toggle-size);
+  height: calc(var(--toggle-size) / 2);
+}
+
+.toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-bg-light);
+  transition: .4s;
+  border-radius: calc(var(--toggle-size) / 2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: calc(var(--toggle-size) / 2 - 6px);
+  width: calc(var(--toggle-size) / 2 - 6px);
+  left: 7px;
+  bottom: 3px;
+  background-color: var(--switch-light);
+  background-image: var(--sun);
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked+.slider {
+  background-color: var(--toggle-bg-dark);
+}
+
+input:checked+.slider:before {
+  transform: translateX(calc(var(--toggle-size) / 2 - 6px));
+  background-color: var(--switch-dark);
+  background-image: var(--moon);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 2px var(--toggle-bg-dark);
+}

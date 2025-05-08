@@ -37,19 +37,20 @@ body.light-mode .footer {
 body.dark-mode .social-icon {
   filter: brightness(0) invert(1);
 }
+
 /* ...existing code... */
 
 /* Light mode styles */
 body.light-mode .footer {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-top: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .social-icon {
-    filter: brightness(0) saturate(100%) opacity(0.6);
+  filter: brightness(0) saturate(100%) opacity(0.6);
 }
 
 /* Dark mode filter for icons */
 body.dark-mode .social-icon {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
