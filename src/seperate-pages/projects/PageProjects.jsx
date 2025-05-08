@@ -5,7 +5,7 @@ import Footer from '../../pages/Footer/Footer.jsx';
 
 function PageProjects() {
   return (
-    <>
+    <div className='page-projects-container'>
       <div className='Navigator'>
         <NavigationBar/>
       </div>
@@ -17,7 +17,7 @@ function PageProjects() {
       </div>
       <Projects/>
       <Footer/>
-    </>
+    </div>
   );
 }
 export default PageProjects;

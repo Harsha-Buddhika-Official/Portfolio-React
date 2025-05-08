@@ -5,7 +5,7 @@ import Footer from '../../pages/Footer/Footer.jsx';
 
 function PageAbout() {
   return (
-    <>
+    <div className='page-contact-container'>
       <div className='Navigator'>
         <NavigationBar/>
       </div>
@@ -17,7 +17,7 @@ function PageAbout() {
       </div>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   );
 }
 export default PageAbout;

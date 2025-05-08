@@ -32,8 +32,8 @@ body.light-mode .page-about {
     z-index: 1000;
 }
 
-body.light-mode .Navigator .navbar-logo a,
-body.light-mode .Navigator .navbar-item {
+body.light-mode .page-about-container .navbar-logo a ,
+body.light-mode .page-about-container .navbar-item {
     color: #fff !important;
 }
 

@@ -32,8 +32,8 @@ body.light-mode .page-about {
     z-index: 1000;
 }
 
-body.light-mode .Navigator .navbar-logo a,
-body.light-mode .Navigator .navbar-item {
+body.light-mode .page-contact-container .navbar-logo a ,
+body.light-mode .page-contact-container .navbar-item {
     color: #fff !important;
 }
 
@@ -42,7 +42,6 @@ body.light-mode .Navigator .navbar-item {
     margin-bottom: 20px;
     color: #ffffff;
 }
-
 .page-about-content p {
     font-size: 1.5rem;
     margin-bottom: 20px;

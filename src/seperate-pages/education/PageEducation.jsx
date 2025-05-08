@@ -7,7 +7,7 @@ import ResultsMain from './Results-Main/ResultsMain.jsx'; // Import the ResultsM
 
 function PageEducation() {
   return (
-    <>
+    <div className='page-education-container'>
       <div className='Navigator'>
         <NavigationBar/>
       </div>
@@ -23,7 +23,7 @@ function PageEducation() {
       <Skills/>
       <ResultsMain/>
       <Footer/>
-    </>
+    </div>
   );
 }
 export default PageEducation;
