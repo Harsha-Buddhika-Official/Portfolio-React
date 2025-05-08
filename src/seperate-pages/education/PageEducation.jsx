@@ -3,7 +3,7 @@ import NavigationBar from '../../components/Navigation_Bar/NavigationBar.jsx';
 import Education from '../../pages/page5/Education.jsx';
 import Footer from '../../pages/Footer/Footer.jsx';
 import Skills from '../../pages/page4/Skills.jsx';
-import ResultsMain from './Results-Main/ResultsMain.jsx'; // Import the ResultsMain component
+import ResultsMain from './Results-Main/ResultsMain.jsx';
 
 function PageEducation() {
   return (
