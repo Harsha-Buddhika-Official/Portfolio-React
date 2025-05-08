@@ -1,9 +1,35 @@
+import { useEffect, useRef } from 'react';
 import './education.css';
 import EduTemp from '../../components/Education_Block/EduTemp.jsx';
 import Uni from './logo/UniLogo.png'
 import nextgen from './logo/nextgen.png'
 
 function Education(){
+    const containerRef = useRef(null);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, []);
+
     const degrees = [
         {
             university: "Eastern University Srilanka",
@@ -30,19 +56,22 @@ function Education(){
     return(
         <>
             <h1 className='Edu-Tital'>Education</h1>
-            {degrees.map((degree, index) => (
-                <EduTemp
-                    key={index}
-                    university={degree.university}
-                    name={degree.name}
-                    year={degree.year}
-                    description={degree.description}
-                    keyCourses={degree.keyCourses}
-                    achievements={degree.achievements}
-                    logo={degree.logo}
+            <div className='Edu-Container' ref={containerRef}>
+                {degrees.map((degree, index) => (
+                    <EduTemp
+                        key={index}
+                        university={degree.university}
+                        name={degree.name}
+                        year={degree.year}
+                        description={degree.description}
+                        keyCourses={degree.keyCourses}
+                        achievements={degree.achievements}
+                        logo={degree.logo}
                     />
-            ))}
+                ))}
+            </div>
         </>
     )
 }
+
 export default Education;

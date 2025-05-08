@@ -9,3 +9,14 @@
     padding: 50px 0px 20px 0px;
     margin: 0px;
 }
+
+.Edu-Container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.Edu-Container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
