@@ -15,8 +15,7 @@ function DarkMode() {
   return (
     <div className="theme-toggle">
       <div className="switch">
-        <input
-          type="checkbox"
+        <input type="checkbox"
           onChange={() => setDarkMode(!darkMode)}
           checked={darkMode}
           id="check"
